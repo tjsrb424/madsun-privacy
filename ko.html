@@ -39,7 +39,8 @@
 <section><h2>Google Play Games 인증</h2>
 <p>Android 1.4.0에는 Play Games 프로필을 이용한 자동 플랫폼 인증을 위해 Google Play Games Services SDK가 포함됩니다. 인증에 실패해도 게임을 계속할 수 있으며, 프로필 생성을 자동으로 요구하는 화면은 표시하지 않도록 설정했습니다. Madsun은 이 인증으로 별도의 게임 계정을 만들지 않습니다.</p>
 <p>Google은 인증과 관련 게이머 ID를 관리합니다. Google의 SDK 데이터 공개 안내에는 게이머 태그·아바타 등의 프로필 정보와 자동 분석·진단 정보 처리가 설명되어 있습니다. Google은 Play Games Services 데이터 전송에 HTTPS 암호화를 사용한다고 안내합니다. 자세한 내용은 <a href="https://developer.android.com/games/pgs/data-collection">Play Games Services 데이터 공개 안내</a>와 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>을 확인해 주세요.</p>
-<p>현재 게임 코드는 인증 상태만 확인합니다. 플레이어 ID, 게이머 태그, 아바타, 이메일 주소나 친구 목록을 가져오거나 저장하지 않으며, 캠페인 저장 기록·별 평가·점수를 Play Games 업적·리더보드·Saved Games에 보내지 않습니다. 로컬 진행도는 플랫폼 인증과 별개이며, 인증이 클라우드 저장 복원을 제공하지는 않습니다.</p>
+<p>Android 1.4.0은 플랫폼 인증 상태를 확인합니다. Android 1.4.1부터는 인증된 Google Play Games 계정의 업적 달성 상태도 읽고, 달성한 업적의 식별자를 Google에 전송합니다. 기존 진행도를 포함한 로컬 최고 기록과 큐브 해금 상태로 업적을 판정하며, 오프라인이거나 인증에 실패하면 이후에 다시 시도합니다. Google은 업적을 Play Games 프로필에 저장합니다. 게임은 플레이어 ID, 게이머 태그, 아바타, 이메일 주소나 친구 목록을 가져오거나 저장하지 않습니다.</p>
+<p>게임은 캠페인 저장 파일, 개별 회전 수, 별 합계나 리더보드 점수를 업로드하지 않습니다. 다만 달성한 업적으로 공개된 스테이지·별 목표에 도달했다는 사실을 알 수 있습니다. 로컬 진행도는 플랫폼 인증·업적과 별개이며, 인증·업적이 클라우드 저장 복원을 제공하지는 않습니다. 로컬 진행도를 삭제해도 Google에 이미 저장된 업적이 취소되지는 않습니다.</p>
 <p>Google이 보유한 게임 데이터의 삭제와 프로필 관리는 <a href="https://play.google.com/games/profile">Play Games 프로필</a> 또는 <a href="https://myaccount.google.com/">Google 계정</a>에서 할 수 있습니다. 앱의 로컬 데이터를 지워도 Google이 보유한 정보가 삭제되지는 않습니다. Google의 보관·삭제에는 Google의 정책과 계정 관리 기능이 적용됩니다.</p></section>
 <section><h2>대상 연령과 제공 지역</h2>
 <p>Tilt Cube은 13~15세, 16~17세와 18세 이상 청소년·성인을 대상으로 하며 13세 미만 아동을 대상으로 설계한 앱이 아닙니다. 이 대상 선택만으로 13세 미만의 설치가 자동 차단되지는 않습니다. 앱은 현재 생년월일을 묻거나 연령 확인 화면을 제공하지 않습니다. 지역별 기준에 따라 청소년에게도 개인정보·동의 요건이 적용될 수 있습니다.</p>
