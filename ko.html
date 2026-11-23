@@ -25,7 +25,7 @@
 <main>
 <p class="eyebrow">Madsun · Tilt Cube</p>
 <h1>개인정보처리방침</h1>
-<p class="meta">시행일: 2026년 10월 27일<br>최종 갱신일: 2026년 11월 17일<br>앱: Tilt Cube · Android 패키지: <code>com.madsun.tiltpuzzle</code><br>운영자: 대한민국의 개인 개발 브랜드 Madsun<br>문의: <a href="mailto:tjsrb424@gmail.com">tjsrb424@gmail.com</a></p>
+<p class="meta">시행일: 2026년 10월 27일<br>최종 갱신일: 2026년 11월 23일<br>앱: Tilt Cube · Android 패키지: <code>com.madsun.tiltpuzzle</code><br>운영자: 대한민국의 개인 개발 브랜드 Madsun<br>문의: <a href="mailto:tjsrb424@gmail.com">tjsrb424@gmail.com</a></p>
 <section><h2>앱 소개</h2>
 <p>이 방침은 Tilt Cube의 정보 처리 방식을 설명합니다. Madsun은 별도의 게임 계정 가입이나 온라인 게임 저장 서비스를 제공하지 않습니다. Android 1.4.0에는 아래에서 설명하는 Google Play Games 플랫폼 인증이 포함됩니다. 플레이 중 이름, 이메일 주소, 연락처, 사진 또는 마이크 녹음을 Madsun에 제출하도록 요구하지 않습니다. 포함된 제3자 서비스는 아래에서 별도로 설명합니다.</p></section>
 <section><h2>게임 진행·설정과 백업</h2>
@@ -36,11 +36,14 @@
 <p>Android 1.3.1부터 출시 빌드에서는 스테이지 완료 시점에 Google AdMob 전면 광고를 표시합니다. 광고 요청 전에 User Messaging Platform(UMP) 동의 정보를 갱신하고 필요한 양식을 표시합니다. 동의 정보가 광고 요청을 허용하지 않거나 광고를 이용할 수 없으면 광고 없이 게임을 계속할 수 있습니다. 앱에는 Google Mobile Ads와 UMP 라이브러리가 포함되어 있습니다. 광고 요청에는 비개인화, 보수적인 아동 콘텐츠 보호, 전체이용가 콘텐츠 등급, 게시자 개인화 비활성화 및 게시자 퍼스트 파티 ID 비활성화 설정을 적용합니다. 이 제한이 광고나 포함된 SDK의 정보 처리가 전혀 없음을 뜻하지는 않습니다. 이 빌드에서는 Android 광고 ID(AD_ID) 권한과 AdServices 광고 ID·기여 분석·주제 권한을 제거했습니다. 권한 제거 또는 광고 요청 차단이 포함된 모든 구성요소의 정보 처리 부재를 의미하지는 않습니다.</p>
 <p>Google의 광고 SDK 설명은 네트워크 기반 대략적 위치, 앱·광고 상호작용, 진단 정보와 기기 관련 식별자 등의 처리 가능성을 안내합니다. 실제 처리는 서비스, 구성, 플랫폼과 설정에 따라 달라집니다. Google의 처리, 수신자, 보관과 국외 처리에 관한 설명은 <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=en">Mobile Ads SDK 데이터 공개 안내</a>와 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있습니다. 이 방침은 포함된 SDK가 데이터를 전혀 수집하지 않는다고 설명하지 않습니다.</p>
 <p>앱의 개인정보 메뉴에서 이 방침과 개인정보 선택 기능에 접근할 수 있습니다. 개인정보 메뉴에서 동의 절차를 다시 시도할 수 있으며 Google이 요구하는 경우 개인정보 선택 양식을 다시 열 수 있습니다. 앱은 광고 초기화·불러오기·표시 전에 UMP가 광고 요청을 허용하는지 확인합니다. 상태 안내 자체가 개인화 광고에 대한 동의를 뜻하지 않습니다.</p></section>
+<section><h2>플레이 분석</h2>
+<p>Android 1.5.1부터 Madsun은 틸트큐브 플레이 방식을 이해하기 위해 Google Analytics for Firebase를 사용합니다. 앱 실행·복귀, 스테이지 진입·시도·클리어, 회전 수, 진행 위치와 광고 표시 결과가 포함됩니다. 퍼즐 난이도, 재방문 및 광고 이후 진행을 개선하는 데 사용합니다.</p>
+<p>Google Analytics는 앱 인스턴스 식별자를 사용하고 네트워크 정보에서 대략적 위치를 파생할 수 있습니다. 앱은 분석용 광고 ID 수집과 광고 개인화를 사용하지 않도록 설정했습니다. Google Analytics 데이터는 암호화해 전송합니다. 이벤트는 서울 리전의 비공개 BigQuery 데이터셋으로 내보내며 일별 테이블은 60일 뒤 만료됩니다. Google의 데이터 처리와 보관에 관한 내용은 <a href="https://support.google.com/analytics/answer/11582702?hl=ko">Firebase Analytics 데이터 공개 안내</a>와 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에서 확인할 수 있습니다. 분석 데이터에 관한 요청은 아래 개인정보 문의처로 보내 주세요.</p></section>
 <section><h2>Google Play Games 인증</h2>
 <p>Android 1.4.0에는 Play Games 프로필을 이용한 자동 플랫폼 인증을 위해 Google Play Games Services SDK가 포함됩니다. 인증에 실패해도 게임을 계속할 수 있으며, 프로필 생성을 자동으로 요구하는 화면은 표시하지 않도록 설정했습니다. Madsun은 이 인증으로 별도의 게임 계정을 만들지 않습니다.</p>
 <p>Google은 인증과 관련 게이머 ID를 관리합니다. Google의 SDK 데이터 공개 안내에는 게이머 태그·아바타 등의 프로필 정보와 자동 분석·진단 정보 처리가 설명되어 있습니다. Google은 Play Games Services 데이터 전송에 HTTPS 암호화를 사용한다고 안내합니다. 자세한 내용은 <a href="https://developer.android.com/games/pgs/data-collection">Play Games Services 데이터 공개 안내</a>와 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>을 확인해 주세요.</p>
 <p>Android 1.4.0은 플랫폼 인증 상태를 확인합니다. Android 1.4.1부터는 인증된 Google Play Games 계정의 업적 달성 상태도 읽고, 달성한 업적의 식별자를 Google에 전송합니다. 기존 진행도를 포함한 로컬 최고 기록과 큐브 해금 상태로 업적을 판정하며, 오프라인이거나 인증에 실패하면 이후에 다시 시도합니다. Google은 업적을 Play Games 프로필에 저장합니다. 게임은 플레이어 ID, 게이머 태그, 아바타, 이메일 주소나 친구 목록을 가져오거나 저장하지 않습니다.</p>
-<p>게임은 캠페인 저장 파일, 개별 회전 수, 별 합계나 리더보드 점수를 업로드하지 않습니다. 다만 달성한 업적으로 공개된 스테이지·별 목표에 도달했다는 사실을 알 수 있습니다. 로컬 진행도는 플랫폼 인증·업적과 별개이며, 인증·업적이 클라우드 저장 복원을 제공하지는 않습니다. 로컬 진행도를 삭제해도 Google에 이미 저장된 업적이 취소되지는 않습니다.</p>
+<p>Play Games 업적을 위해 캠페인 저장 파일, 개별 회전 수, 별 합계나 리더보드 점수를 업로드하지 않습니다. 다만 달성한 업적으로 공개된 스테이지·별 목표에 도달했다는 사실을 알 수 있습니다. 로컬 진행도는 플랫폼 인증·업적과 별개이며, 인증·업적이 클라우드 저장 복원을 제공하지는 않습니다. 로컬 진행도를 삭제해도 Google에 이미 저장된 업적이 취소되지는 않습니다.</p>
 <p>Google이 보유한 게임 데이터의 삭제와 프로필 관리는 <a href="https://play.google.com/games/profile">Play Games 프로필</a> 또는 <a href="https://myaccount.google.com/">Google 계정</a>에서 할 수 있습니다. 앱의 로컬 데이터를 지워도 Google이 보유한 정보가 삭제되지는 않습니다. Google의 보관·삭제에는 Google의 정책과 계정 관리 기능이 적용됩니다.</p></section>
 <section><h2>대상 연령과 제공 지역</h2>
 <p>Tilt Cube은 13~15세, 16~17세와 18세 이상 청소년·성인을 대상으로 하며 13세 미만 아동을 대상으로 설계한 앱이 아닙니다. 이 대상 선택만으로 13세 미만의 설치가 자동 차단되지는 않습니다. 앱은 현재 생년월일을 묻거나 연령 확인 화면을 제공하지 않습니다. 지역별 기준에 따라 청소년에게도 개인정보·동의 요건이 적용될 수 있습니다.</p>
